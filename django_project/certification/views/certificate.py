@@ -371,6 +371,7 @@ def certificate_pdf_view(request, **kwargs):
 
 def download_certificates_zip(request, **kwargs):
     """Download all certificates in a course as one zip file."""
+
     project_slug = kwargs.pop('project_slug')
     course_slug = kwargs.pop('course_slug')
     course = Course.objects.get(slug=course_slug)
