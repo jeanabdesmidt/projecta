@@ -77,3 +77,8 @@ PIPELINE_CSS['project'] = {
         'media': 'screen, projection',
     },
 }
+
+# PayU settings
+PAYU_MERCHANT_KEY = "Your MerchantID"
+PAYU_MERCHANT_SALT = "Your MerchantSALT"
+PAYU_MODE = "TEST"
