@@ -21,7 +21,15 @@ INSTALLED_APPS += (
     'django_countries',  # for sponsor addresses
     # 'user_map',
     'disqus',
+    'payu',
 )
+
+PAYU_MERCHANT_KEY = "Your MerchantID",
+
+PAYU_MERCHANT_SALT = "Your MerchantSALT",
+
+# And add the PAYU_MODE to 'TEST' for testing and 'LIVE' for production.
+PAYU_MODE = "TEST"
 
 # Set disqus and shortname
 # noinspection PyUnresolvedReferences
